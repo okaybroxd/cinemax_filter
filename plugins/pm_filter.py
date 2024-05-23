@@ -439,7 +439,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TechMagazineYT'),
+            InlineKeyboardButton('🤖 Bot', url='https://t.me/Cinemaxsupportbot'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -447,7 +447,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="<b>About bot :-</b>\n<blockquote><b>✪ Coded in</b> :- Python\n<b>✪ Developer</b> :- <a href='https://t.me/sevenchatfivespecialbot'>Rinku Atwal</a></blockquote>\n<b>✪ Hosted on</b> :- Koyeb\n✪ <b>Library used</b> :- Pyrogram",
+            text="<b>About bot :-</b>\n<b>✪ Coded in</b> :- Python\n<b>✪ Developer</b> :- <a href='https://t.me/sevenchatfivespecialbot'>Rinku Atwal</a>\n<b>✪ Hosted on</b> :- Koyeb\n✪ <b>Library used</b> :- Pyrogram",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
