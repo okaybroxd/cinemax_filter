@@ -402,7 +402,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pages":
         await query.answer()
-    elif query.data == buttons = [[
+    elif query.data == "start":
+        buttons = [[
             InlineKeyboardButton('🧭 Channel', url='https://t.me/cinemaxforall'),
             InlineKeyboardButton('🛳 Group', url='https://t.me/+69X2TR-uItswOWNl')
             ],[
