@@ -402,13 +402,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pages":
         await query.answer()
-    elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
+    elif query.data == buttons = [[
+            InlineKeyboardButton('🧭 Channel', url='https://t.me/cinemaxforall'),
+            InlineKeyboardButton('🛳 Group', url='https://t.me/+69X2TR-uItswOWNl')
+            ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TechMagazineYT')
-        ], [
+            InlineKeyboardButton('🤖 Bot', url='https://t.me/Cinemaxsupportbot')
+            ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ]]
@@ -446,7 +446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            text="<b>About bot :-</b>\n<blockquote><b>✪ Coded in</b> :- Python\n<b>✪ Developer</b> :- <a href='https://t.me/sevenchatfivespecialbot'>Rinku Atwal</a></blockquote>\n<b>✪ Hosted on</b> :- Koyeb\n✪ <b>Library used</b> :- Pyrogram",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -456,7 +456,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.SOURCE_TXT,
+            text="<b>Source Code :- Closed</b>\n",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
