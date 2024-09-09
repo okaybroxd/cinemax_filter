@@ -52,7 +52,7 @@ class Bot(Client):
         logging.info(LOG_STR)
 
     async def stop(self, *args):
-        await super().stop()
+        #await super().stop()
         logging.info("Bot stopped. Bye.")
     
     async def iter_messages(
